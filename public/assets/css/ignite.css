@@ -1,0 +1,195 @@
+/*
+	@HarrisChristiansen.com
+	For: Ignitethefla.me
+	July 2015
+*/
+
+.redText {
+	color: #d93f07 !important;
+}
+
+.redBG {
+	background-color: #d93f07 !important;
+}
+
+.redTextHover:hover {
+	color: #d93f07 !important;
+}
+
+.redBGHover:hover {
+	background-color: #d93f07 !important;
+}
+
+
+/* ---------------- Nav Bar ---------------- */
+
+.logo_menuBar {
+	color: #FFFFFF;
+	fill: currentColor;
+}
+.logo_menuBar svg {
+	margin-top: 14px;
+	margin-left: 20px;
+	height: 20px;
+}
+
+.hoverPointer:hover {
+	cursor: pointer;
+	color: #d93f07;
+}
+
+/* ---------------- Banner ---------------- */
+
+#banner .inner {
+	max-width: 32em;
+	margin: 0 auto;
+}
+
+.banner_flame {
+	margin-bottom: 10px !important;
+}
+
+.banner_flame svg {
+	/*width: 168px;*/
+	width: 3.2em;
+	-webkit-filter: drop-shadow(-5px -5px 5px #000);
+	filter: drop-shadow(-5px -5px 5px #000);
+}
+
+.banner_ignite {
+	margin-bottom: 10px !important;
+}
+
+.banner_ignite svg {
+	color: #FFFFFF;
+	fill: currentColor;
+	/*width: 224px;*/
+	width: 4em;
+}
+
+.banner_ignite #letter1 {
+-webkit-animation: igniteLoop 5s infinite 0s;
+        animation: igniteLoop 5s infinite 0s; }
+.banner_ignite #letter2 {
+-webkit-animation: igniteLoop 5s infinite 0.07s;
+        animation: igniteLoop 5s infinite 0.07s; }
+.banner_ignite #letter3 {
+-webkit-animation: igniteLoop 5s infinite 0.14s;
+        animation: igniteLoop 5s infinite 0.14s; }
+.banner_ignite #letter4 {
+-webkit-animation: igniteLoop 5s infinite 0.21s;
+        animation: igniteLoop 5s infinite 0.21s; }
+.banner_ignite #letter5 {
+-webkit-animation: igniteLoop 5s infinite 0.28s;
+        animation: igniteLoop 5s infinite 0.28s; }
+.banner_ignite #letter6 {
+-webkit-animation: igniteLoop 5s infinite 0.35s;
+        animation: igniteLoop 5s infinite 0.35s; }
+
+.banner_actions input {
+	color: #CCCCCC !important;
+}
+
+.nextPage {
+	border: none;
+	color: #cccccc;
+	text-decoration: none;
+
+	position: absolute;
+	bottom: 20px;
+
+	z-index: 100;
+}
+
+.nextPage:hover {
+	border: none;
+	color: #d93f07 !important;
+}
+
+/* ---------------- About ---------------- */
+
+#one {
+	min-height: 100%;
+}
+
+#one h2 {
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+
+#one h2 > i {
+	color: #F28627;
+	margin-bottom: 15px;
+	text-shadow: 4px 4px 0 #D93F07, 8px 8px 0 #A3140C;
+}
+
+#one p {
+	max-width: 32em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ---------------- Mentors ---------------- */
+
+.mentorImage {
+	position: relative;
+}
+
+article:hover img {
+	visibility: hidden;
+}
+
+.mentorInfo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+article:hover .mentorInfo {
+	display: block;
+}
+
+.mentorIcons {
+	padding-top: 10px;
+	font-size: 11px;
+}
+
+article h3 {
+	margin-bottom: 0px;
+}
+
+article p {
+	margin-bottom: 8px;
+}
+
+/* ---------------- Ignite Text Loop ---------------- */
+
+@-webkit-keyframes igniteLoop {
+  0% {
+    fill: white; }
+
+  5% {
+    fill: #D93F07; }
+
+  20% {
+    fill: white; }
+
+  100% {
+    fill: white; } }
+
+@keyframes igniteLoop {
+  0% {
+    fill: white; }
+
+  5% {
+    fill: #D93F07; }
+
+  20% {
+    fill: white; }
+
+  100% {
+    fill: white; } }
