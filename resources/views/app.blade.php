@@ -57,7 +57,7 @@
 							Why Ignite?
 						</h2>
 						<p>
-							We saw a gap. A gap between the students who build products, start companies, and get <span class="redText">kick-ass</span> internships and the students who don't even know where to begin. Our goal is to close that gap, giving more students an opportunity to do awesome things, and to <span class="redText">ignite</span> a generation of talented and ambitious students at Purdue.<br>
+							We saw a gap. A gap between the students who build products, start companies, and get <span class="redText">kick-ass</span> internships and the students who don't even know where to begin. Our goal is to close that gap, giving more students an opportunity to do awesome things, and to <span class="redText">ignite</span> a movement.<br>
 							<br>
 							Ignite connects <span class="redText">talented</span> upperclassmen with <span class="redText">motivated</span> freshmen, who we know will shape the future.
 						</p>
@@ -69,37 +69,37 @@
 						<div class="4u 6u(medium) 12u$(small)">
 							<section class="feature fa-code">
 								<h3>Code</h3>
-								<p>Never coded before? Coding since the age of 2? Either way this is the mentorship for you.</p>
+								<p>Code is the differentiating factor between someone with an idea and someone with a product. We'll help you get started from the ground up.</p>
 							</section>
 						</div>
 						<div class="4u 6u$(medium) 12u$(small)">
 							<section class="feature fa-cogs">
-								<h3>Build Something</h3>
-								<p>Through this program you will create an awesome side project that you can add to your resume.</p>
+								<h3>Build</h3>
+								<p>The hardest part of building something is finding out where to begin. Not only will we help you get started but we'll push you to finish it.</p>
 							</section>
 						</div>
 						<div class="4u$ 6u(medium) 12u$(small)">
 							<section class="feature fa-graduation-cap">
 								<h3>Learn</h3>
-								<p>wWnt to work on something but have no idea how to get started, that is what your mentor is for!</p>
+								<p>College is a great place to learn, both in and out of the classroom. Your mentor will be there to answer any questions you may have.</p>
 							</section>
 						</div>
 						<div class="4u 6u$(medium) 12u$(small)">
 							<section class="feature fa-users">
 								<h3>Connect</h3>
-								<p>Meet upperclassmen who have been in your shoes before and have it all figured out.</p>
+								<p>Your network is one of your most valuable assets, let us expand it ten-fold.</p>
 							</section>
 						</div>
 						<div class="4u 6u(medium) 12u$(small)">
 							<section class="feature fa-clock-o">
-								<h3>How Often</h3>
-								<p>Meetups with all the mentor pairs every three weeks, and weekly meetings with your mentor.</p>
+								<h3>Attend</h3>
+								<p>You and your mentor will meet weekly, and we'll have program events every three weeks for you to connect with other participants.</p>
 							</section>
 						</div>
 						<div class="4u$ 6u$(medium) 12u$(small)">
-							<section class="feature fa-question">
-								<h3>Why Ignite</h3>
-								<p>Our goal is to jumpstart your time here at purdue and form valuable connections much sooner than  you could on your own.</p>
+							<section class="feature fa-trophy">
+								<h3>Succeed</h3>
+								<p>Ignite will jumpstart your life. Our goal is to open as many doors for you as possible, all you need to do is walk through them.</p>
 							</section>
 						</div>
 					</div>
