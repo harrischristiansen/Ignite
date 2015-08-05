@@ -2095,7 +2095,7 @@ html, body {
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 1.25em 0 0;
+				padding: 0 0.5em 0 0;
 			}
 
 				ul.icons li:last-child {

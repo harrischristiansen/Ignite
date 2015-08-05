@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML> {{-- Add Calendar --}}
 <html>
 	<head>
 		<title>Ignite</title>
@@ -25,8 +25,8 @@
 
 				<nav id="nav">
 					<ul>
-						<li onclick='scrollTo("#one");' class="hoverPointer">Why</li>
-						<li onclick='scrollTo("#three");' class="hoverPointer">Mentors</li>
+						<li onclick='scrollTo("#why");' class="hoverPointer">Why</li>
+						<li onclick='scrollTo("#mentors");' class="hoverPointer">Mentors</li>
 						<li onclick='scrollTo("#cta");' class="hoverPointer">Contact</li>
 					</ul>
 				</nav>
@@ -49,7 +49,7 @@
 			</section>
 
 		<!-- About -->
-			<section id="one" class="wrapper style2">
+			<section id="why" class="wrapper style2">
 				<div class="container">
 					<header class="major">
 						<h2>
@@ -108,7 +108,7 @@
 			</section>
 			
 		<!-- Mentors -->
-			<section id="three" class="wrapper style1">
+			<section id="mentors" class="wrapper style1">
 				<div class="container">
 					<header class="major">
 						<h2>Meet Our Mentors</h2>
@@ -117,90 +117,87 @@
 					<div class="row">
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
+								<img src="images/mentors/harris.jpg" alt="Harris Christiansen" class="image fit" />
+								{{-- <div class="mentorImage">
 									<img src="images/mentors/harris.jpg" alt="Harris Christiansen" class="image fit" />
 									<div class="mentorInfo">
 										<h4 class="redText">Director Of Ignite</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Purdue Hackers Organizer<br>
+										Apple Intern (Summer 2015)
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Harris Christiansen</h3>
+								<p>Director Of Ignite</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
-								{{--<p>Director Of Ignite</p>
-								<ul class="actions">
+								{{--<ul class="actions">
 									<li><a href="#" class="button">Learn More</a></li>
 								</ul>--}}
 							</article>
 						</div>
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/kelly.jpg" alt="Kelly Kennedy" class="image fit" />
+								<img src="images/mentors/kelly.jpg" alt="Kelly Kennedy" class="image fit" />
+								{{--<div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Director Of Recruitment</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Purdue Hackers Organizer<br>
+										CAT Intern (Summer 2015)
 									</div>
-								</div>
+								</div>--}}
 								<h3 class="redText">Kelly Kennedy</h3>
+								<p>Director Of Recruitment</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/kelly.kennedy.50159" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
-								{{--<p>Director Of Recruitment</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>--}}
 							</article>
 						</div>
 						<div class="3u 4u$(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/marcela.jpg" alt="Marcela Foster" class="image fit" />
+								<img src="images/mentors/marcela.jpg" alt="Marcela Foster" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Director Of Events</h4>
 										<hr>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua.
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Marcela Foster</h3>
+								<p>Director Of Events</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/MarcelaFosterIsMostLikelyBetterThanYou" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
-								{{--<p>Director Of Events</p>
-								<ul class="actions">
-									<li><a href="#" class="button">Learn More</a></li>
-								</ul>--}}
 							</article>
 						</div>
 						<div class="3u$ 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/marty.jpg" alt="Marty Kausas" class="image fit" />
+								<img src="images/mentors/marty.jpg" alt="Marty Kausas" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										President of Purdue Hackers<br>
+										Sponsorship Team of Boilermake (Fall 2015)<br>
+										Qualcomm Intern (Summer 2015)
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Marty Kausas</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/mkausas" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -209,18 +206,18 @@
 						</div>
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/alderfer.jpg" alt="Ben Alderfer" class="image fit" />
+								<img src="images/mentors/alderfer.jpg" alt="Ben Alderfer" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Builds cool shit and breaks things
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Ben Alderfer</h3>
+								<p>Builds cool shit and breaks things</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/benalderfer" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -229,18 +226,19 @@
 						</div>
 						<div class="3u 4u$(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/brown.jpg" alt="Spencer Brown" class="image fit" />
+								<img src="images/mentors/brown.jpg" alt="Spencer Brown" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Director of BoilerMake (Fall 2014)<br>
+										Sponsorship Lead for Boilermake (Fall 2015)
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Spencer Brown</h3>
+								<p>Competitive Pokemon Player</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/nworbrecneps" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -249,18 +247,20 @@
 						</div>
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/caitlin.jpg" alt="Caitlin Kennedy" class="image fit" />
+								<img src="images/mentors/caitlin.jpg" alt="Caitlin Kennedy" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Something at Anvil<br>
+										USB Board Member<br>
+										Internactive Intelligence Intern (Summer 2015)
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Caitlin Kennedy</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/caitlin.kennedy.712" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -269,18 +269,19 @@
 						</div>
 						<div class="3u$ 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/hammons.jpg" alt="Jack Hammons" class="image fit" />
+								<img src="images/mentors/hammons.jpg" alt="Jack Hammons" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Co-Founder of Purdue Hackers<br>
+										Exec Board of BoilerMake
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Jack Hammons</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/jackchammons" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -289,18 +290,19 @@
 						</div>
 						<div class="3u 4u$(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/kirby.jpg" alt="Kirby Kholmorgen" class="image fit" />
+								<img src="images/mentors/kirby.jpg" alt="Kirby Kholmorgen" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
 										President of USB<br>
 										Founder of BoilerMake
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Kirby Kholmorgen</h3>
+								<p>Very seen Star Wars&trade;</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=1569585824" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -309,18 +311,19 @@
 						</div>
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/mason.jpg" alt="Mason Everett" class="image fit" />
+								<img src="images/mentors/mason.jpg" alt="Mason Everett" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Purdue Hackers Organizer<br>
+										Exec Board of BoilerMake
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Mason Everett</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/mas.everett" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -329,18 +332,19 @@
 						</div>
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/chukwudi.jpg" alt="Chukwudi Uche" class="image fit" />
+								<img src="images/mentors/chukwudi.jpg" alt="Chukwudi Uche" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua.
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Chukwudi Uche</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/profile.php?id=100008320128963" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -349,18 +353,18 @@
 						</div>
 						<div class="3u$ 4u$(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/ed.jpg" alt="Ed Flanagan" class="image fit" />
+								<img src="images/mentors/ed.jpg" alt="Ed Flanagan" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Microsoft Intern (Summer 2015)
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Ed Flanagan</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/ed.flanagan0" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -369,18 +373,19 @@
 						</div>
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/medhi.jpg" alt="Krishnabh Medhi" class="image fit" />
+								<img src="images/mentors/medhi.jpg" alt="Krishnabh Medhi" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua.
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Krishnabh Medhi</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/kingshu" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -389,18 +394,19 @@
 						</div>
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/adam.jpg" alt="Adam Loeb" class="image fit" />
+								<img src="images/mentors/adam.jpg" alt="Adam Loeb" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua.
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Adam Loeb</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/adam.loeb.9" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -409,18 +415,19 @@
 						</div>
 						<div class="3u 4u$(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/nicky.jpg" alt="Nicky Semenza" class="image fit" />
+								<img src="images/mentors/nicky.jpg" alt="Nicky Semenza" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
 										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna aliqua.
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Nicky Semenza</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/nickysemenza" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -429,18 +436,19 @@
 						</div>
 						<div class="3u$ 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/opell.jpg" alt="Scott Opell" class="image fit" />
+								<img src="images/mentors/opell.jpg" alt="Scott Opell" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
 										Exec Board of BoilerMake<br>
 										Treasurer of USB
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Scott Opell</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/scott.opell" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -449,18 +457,20 @@
 						</div>
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/roy.jpg" alt="Roy Fu" class="image fit" />
+								<img src="images/mentors/roy.jpg" alt="Roy Fu" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Purdue Hackers Organizer<br>
+										Exec Board of BoilerMake<br>
+										PicnicHealth Intern (Summer 2015)
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Roy Fu</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/roystbeef" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -469,18 +479,20 @@
 						</div>
 						<div class="3u 4u$(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/shane.jpg" alt="Shane Dewael" class="image fit" />
+								<img src="images/mentors/shane.jpg" alt="Shane Dewael" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Director of The Anvil<br>
+										Exec Board of BoilerMake<br>
+										USB Board Member
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Shane Dewael</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/shane.dewael" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -489,18 +501,19 @@
 						</div>
 						<div class="3u 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/usmann.jpg" alt="Usmann Khan" class="image fit" />
+								<img src="images/mentors/usmann.jpg" alt="Usmann Khan" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Purdue Hackers Organizer<br>
+										Exec Board of BoilerMake
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Usmann Khan</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
-									<li><a href="https://www.facebook.com/harrischristiansen" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.facebook.com/MyGlassesAreFamous" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
 									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
@@ -509,20 +522,19 @@
 						</div>
 						<div class="3u$ 4u(medium) 12u$(small)">
 							<article class="box post">
-								<div class="mentorImage">
-									<img src="images/mentors/zach.jpg" alt="Zach Price" class="image fit" />
+								<img src="images/mentors/zach.jpg" alt="Zach Price" class="image fit" />
+								{{-- <div class="mentorImage">
 									<div class="mentorInfo">
 										<h4 class="redText">Mentor</h4>
 										<hr>
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-										tempor incididunt ut labore et dolore magna aliqua.
+										Exec Board of BoilerMake
 									</div>
-								</div>
+								</div> --}}
 								<h3 class="redText">Zach Price</h3>
+								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/zach.price118" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/zachprice" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
 									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>

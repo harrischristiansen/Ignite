@@ -28,7 +28,7 @@
 	fill: currentColor;
 }
 .logo_menuBar svg {
-	margin-top: 14px;
+	margin-top: 13px;
 	margin-left: 20px;
 	height: 20px;
 }
@@ -52,8 +52,6 @@
 .banner_flame svg {
 	/*width: 168px;*/
 	width: 3.2em;
-	-webkit-filter: drop-shadow(-5px -5px 5px #000);
-	filter: drop-shadow(-5px -5px 5px #000);
 }
 
 .banner_ignite {
@@ -64,7 +62,7 @@
 	color: #FFFFFF;
 	fill: currentColor;
 	/*width: 224px;*/
-	width: 4em;
+	width: 4.1em;
 }
 
 .banner_ignite #letter1 {
@@ -108,22 +106,22 @@
 
 /* ---------------- About ---------------- */
 
-#one {
+#why {
 	min-height: 100%;
 }
 
-#one h2 {
+#why h2 {
 	padding-top: 30px;
 	padding-bottom: 5px;
 }
 
-#one h2 > i {
+#why h2 > i {
 	color: #F28627;
 	margin-bottom: 15px;
 	text-shadow: 4px 4px 0 #D93F07, 8px 8px 0 #A3140C;
 }
 
-#one p {
+#why p {
 	max-width: 32em;
 	margin-left: auto;
 	margin-right: auto;
@@ -131,7 +129,7 @@
 
 /* ---------------- Mentors ---------------- */
 
-.mentorImage {
+/*.mentorImage {
 	position: relative;
 }
 
@@ -151,19 +149,19 @@ article:hover img {
 
 article:hover .mentorInfo {
 	display: block;
-}
+}*/
 
 .mentorIcons {
 	padding-top: 10px;
-	font-size: 11px;
+	font-size: 10px;
 }
 
 article h3 {
-	margin-bottom: 0px;
+	margin-bottom: 2px;
 }
 
 article p {
-	margin-bottom: 8px;
+	margin-bottom: 2px;
 }
 
 /* ---------------- Ignite Text Loop ---------------- */
