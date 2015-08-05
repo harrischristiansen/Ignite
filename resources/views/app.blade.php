@@ -176,9 +176,8 @@
 								<p>Director Of Events</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/MarcelaFosterIsMostLikelyBetterThanYou" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="http://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:mkausas@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -198,9 +197,8 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/mkausas" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/mkausas" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="mailto:mkausas@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -218,9 +216,9 @@
 								<p>Builds cool shit and breaks things</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/benalderfer" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/balderer" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="http://benalderfer.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:ben.alderfer@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -239,9 +237,9 @@
 								<p>Competitive Pokemon Player</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/nworbrecneps" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/spencer-brown" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="http://www.spencer.sx" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:me@spencer.sx" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -282,9 +280,8 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/jackchammons" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/jackchammons" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="mailto:jackchammons@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -303,9 +300,9 @@
 								<p>Very seen Star Wars&trade;</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/profile.php?id=1569585824" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/kirbyk" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="http://kirbyk.me" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:kirby@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -324,9 +321,9 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/mas.everett" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/everetm" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="http://mdawg.me" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:me@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -345,9 +342,8 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/profile.php?id=100008320128963" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/KarmicDemon" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="mailto:cuche@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -365,9 +361,9 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/ed.flanagan0" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/ed-flanagan" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="http://edflanagan.me" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:ed@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -386,9 +382,9 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/kingshu" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/kingshu" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="http://kingshu.co.nr" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:kmedhi@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -407,9 +403,8 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/adam.loeb.9" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/aloeb" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="mailto:loeb.adam@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -428,9 +423,9 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/nickysemenza" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/nickysemenza" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="http://nickysemenza.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:nicky@nickysemenza.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -449,9 +444,9 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/scott.opell" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/scottopell" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="http://scottopell.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:me@scottopell.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -471,9 +466,9 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/roystbeef" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/Roystbeef" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="https://www.royfu.me" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:royfu@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -493,9 +488,9 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/shane.dewael" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/shanedewael" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="http://shanedewael.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:dewaels@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -514,9 +509,9 @@
 								<p>Mentor</p>
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/MyGlassesAreFamous" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.github.com/harrischristiansen" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="https://www.harrischristiansen.com" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="https://www.github.com/usmannk" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
+									<li><a href="https://usmann.me" class="icon fa-desktop" target="_blank"><span class="label">Website</span></a></li>
+									<li><a href="mailto:usmannkhan@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
@@ -535,7 +530,7 @@
 								<ul class="icons mentorIcons">
 									<li><a href="https://www.facebook.com/zach.price118" class="icon fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.github.com/zachprice" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-									<li><a href="mailto:harris@ignitethefla.me" class="icon fa-envelope"><span class="label">Email</span></a></li>
+									<li><a href="mailto:zachprice@purdue.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</article>
 						</div>
