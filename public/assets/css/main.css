@@ -1974,7 +1974,7 @@ html, body {
 			.box.post .image:first-child {
 				border-bottom-left-radius: 0;
 				border-bottom-right-radius: 0;
-				margin: -2em 0 2em -2em;
+				margin: -2em 0 1.2em -2em;
 				width: calc(100% + 4em);
 			}
 
@@ -2807,11 +2807,11 @@ html, body {
 	}
 
 		#banner:after {
-			background: #3d4045;
+			background: #202020;
 
 			background-attachment: scroll;
-			background-color: #494d53;
-			background-image: url("/images/bgs/cartographer.png");
+			background-color: #202020;
+			background-image: url("/images/bgs/zwartevilt.png");
 			background-position: top left;
 			background-repeat: repeat;
 			background-size: auto;
