@@ -13,7 +13,7 @@
 		<!-- Content -->
 			<section id="content">
 				<h3>About</h3>
-				<p>{{ $mentor->description }}</p>
+				<p>{!! $mentor->description !!}</p>
 				@if($mentor->orgs != "")
 					<h3>Organizations</h3>
 					<ul>

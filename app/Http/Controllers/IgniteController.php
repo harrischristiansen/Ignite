@@ -10,7 +10,7 @@ use App\Models\Mentor;
 
 class IgniteController extends Controller {
 	public function getIndex() {
-		$mentors = Mentor::all();
+		$mentors = Mentor::orderBy("orderNum")->get();
 
 		return view('pages.home', compact('mentors'));
 	}

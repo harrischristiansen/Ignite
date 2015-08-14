@@ -8,6 +8,7 @@ class CreateMentors extends Migration {
 	public function up(){
 		Schema::create('mentors', function (Blueprint $table) {
 			$table->increments('id');
+			$table->integer('orderNum');
 			$table->string('name');
 			$table->string('title');
 			$table->string('image');

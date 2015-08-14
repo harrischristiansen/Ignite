@@ -4,16 +4,16 @@
 		<title>Ignite</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="Ignite connects talented upperclassmen at Purdue University with motivated freshmen, who we know will shape the future." />
-		<meta name="keywords" content="Ignite, Purdue, Computer, Science, Ignite The Flame, Purdue Hackers, Hackers, Boilermake, Mentorship, Mentor, Mentee" />
+		<meta name="keywords" content="Ignite, Purdue, Computer, Science, Ignite The Flame, ignitetheflame, Purdue Hackers, Hackers, Boilermake, Mentorship, Mentor, Mentee" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="{{ asset('assets/js/ie/html5shiv.js') }}"></script><![endif]-->
-		<link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
+		<link rel="stylesheet" href="{{ asset('assets/css/main.css?ver=1') }}" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{ asset('assets/css/ie8.css') }}" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="{{ asset('assets/css/ie9.css') }}" /><![endif]-->
 
 
-		<link rel="stylesheet" href="{{ asset('assets/css/ignite.css') }}" />
+		<link rel="stylesheet" href="{{ asset('assets/css/ignite.css?ver=1') }}" />
 	</head>
 	<body {!! Route::currentRouteAction()=="App\Http\Controllers\IgniteController@getIndex"?'class="landing"':'' !!}>
 

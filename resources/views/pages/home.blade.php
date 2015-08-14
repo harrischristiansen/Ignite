@@ -13,7 +13,7 @@
 			<div class="4u 12u(small)"><input type="submit" value="Join Mailing List"></div>
 		</form>
 	</div>
-		<a href="#" class="nextPage">
+		<a href="#" class="nextPage" onclick='scrollTo("#why");'>
 			<i class="fa fa-angle-down fa-3x"></i>
 		</a>
 </section>
