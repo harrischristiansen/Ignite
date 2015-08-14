@@ -12,13 +12,15 @@
 
 		<!-- Content -->
 			<section id="content">
-				<h3>About</h3>
-				<p>{!! $mentor->description !!}</p>
+				@if($mentor->description != "")
+					<h3>About</h3>
+					<p>{!! $mentor->description !!}</p>
+				@endif
 				@if($mentor->orgs != "")
 					<h3>Organizations</h3>
 					<ul>
 						@foreach(explode(",",$mentor->orgs) as $org)
-							<li>{{ $org }}</li>
+							<li>{{ trim($org) }}</li>
 						@endforeach
 					</ul>
 				@endif
