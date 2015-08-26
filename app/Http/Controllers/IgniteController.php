@@ -20,4 +20,8 @@ class IgniteController extends Controller {
 
 		return view('pages.mentor', compact('mentor'));
 	}
+
+	public function getCalendar() {
+		return view('pages.calendar');
+	}
 }
