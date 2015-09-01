@@ -4,7 +4,15 @@
 	Site: IgniteTheFla.me
 */
 
+// jQuery UI Datepicker
+$(function() {
+	$(".datepicker").datepicker();
+});
 
+// Bootstrap Select
+$('.selectpicker').selectpicker();
+
+// Scroll To Divisions
 function scrollTo(divID) {
 	$("html, body").animate({
 		scrollTop: $(divID).offset().top
@@ -81,9 +89,9 @@ function scrollTo(divID) {
 			}
 
 		// Dropdowns.
-			$('#nav > ul').dropotron({
+			/*$('#nav > ul').dropotron({
 				alignment: 'right'
-			});
+			});*/
 
 		// Off-Canvas Navigation.
 

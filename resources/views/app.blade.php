@@ -14,6 +14,8 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="{{ asset('assets/css/ie9.css') }}" /><![endif]-->
 
 
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> {{-- jQuery UI CSS --}}
+		<link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-select/dist/css/bootstrap-select.min.css') }}" /> {{-- Bootstrap Select CSS --}}
 		<link rel="stylesheet" href="{{ asset('assets/css/ignite.css?ver=1') }}" />
 		
 		<!-- Google Analytics -->
@@ -42,6 +44,11 @@
 						<li onclick='scrollTo("#mentors");' class="hoverPointer">Mentors</li>
 						<li onclick='scrollTo("#cta");' class="hoverPointer">Contact</li>
 						<li onclick='window.location.href="{{ action('IgniteController@getCalendar') }}";' class="hoverPointer">Calendar</li>
+						@if(session('loggedIn') == "true")
+							<li onclick='window.location.href="{{ action('IgniteController@getInterviews') }}";' class="hoverPointer">Interviews</li>
+							<li onclick='window.location.href="{{ action('IgniteController@getApplications') }}";' class="hoverPointer">Applications</li>
+							<li onclick='window.location.href="{{ action('IgniteController@getLogout') }}";' class="hoverPointer">Logout</li>
+						@endif
 					</ul>
 				</nav>
 			</header>
@@ -57,6 +64,11 @@
 						<li onclick='window.location.href="{{ action('IgniteController@getIndex') }}#mentors";' class="hoverPointer">Mentors</li>
 						<li onclick='window.location.href="{{ action('IgniteController@getIndex') }}#cta";' class="hoverPointer">Contact</li>
 						<li onclick='window.location.href="{{ action('IgniteController@getCalendar') }}";' class="hoverPointer">Calendar</li>
+						@if(session('loggedIn') == "true")
+							<li onclick='window.location.href="{{ action('IgniteController@getInterviews') }}";' class="hoverPointer">Interviews</li>
+							<li onclick='window.location.href="{{ action('IgniteController@getApplications') }}";' class="hoverPointer">Applications</li>
+							<li onclick='window.location.href="{{ action('IgniteController@getLogout') }}";' class="hoverPointer">Logout</li>
+						@endif
 					</ul>
 				</nav>
 			</header>
@@ -78,6 +90,8 @@
 
 		<!-- Scripts -->
 			<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+			<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> {{-- jQuery UI --}}
+			<script src="{{ asset('assets/plugins/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script> {{-- Boostrap Select --}}
 			{{--<script src="{{ asset('assets/js/jquery.dropotron.min.js') }}"></script> --}}
 			<script src="{{ asset('assets/js/jquery.scrollgress.min.js') }}"></script>
 			<script src="{{ asset('assets/js/jquery.scrolly.min.js') }}"></script>
