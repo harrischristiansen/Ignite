@@ -6,10 +6,12 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddApplicationEdits' => $baseDir . '/database/migrations/2015_09_04_210547_add_application_edits.php',
     'CreateApplications' => $baseDir . '/database/migrations/2015_08_31_124902_create_applications.php',
     'CreateInterests' => $baseDir . '/database/migrations/2015_09_01_025902_create_interests.php',
     'CreateInterviews' => $baseDir . '/database/migrations/2015_08_31_002513_create_interviews.php',
     'CreateLanguages' => $baseDir . '/database/migrations/2015_09_01_025847_create_languages.php',
+    'CreateMeetings' => $baseDir . '/database/migrations/2015_09_02_000903_create_meetings.php',
     'CreateMentors' => $baseDir . '/database/migrations/2015_08_09_212501_create_mentors.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',

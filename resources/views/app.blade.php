@@ -1,7 +1,7 @@
 <!DOCTYPE HTML> {{-- Add Calendar --}}
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 	<head>
-		<title>Ignite</title>
+		<title>Ignite{{ isset($pageTitle)?" - $pageTitle":"" }}</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="Ignite connects talented upperclassmen at Purdue University with motivated freshmen, who we know will shape the future." />
 		<meta name="keywords" content="Ignite, Purdue, Computer, Science, Ignite The Flame, ignitetheflame, Purdue Hackers, Hackers, Boilermake, Mentorship, Mentor, Mentee" />
@@ -15,7 +15,7 @@
 
 
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> {{-- jQuery UI CSS --}}
-		<link rel="stylesheet" href="{{ asset('assets/plugins/bootstrap-select/dist/css/bootstrap-select.min.css') }}" /> {{-- Bootstrap Select CSS --}}
+		<link rel="stylesheet" href="{{ asset('assets/plugins/bvalidator/bvalidator.css') }}" /> {{-- BValidator CSS --}}
 		<link rel="stylesheet" href="{{ asset('assets/css/ignite.css?ver=1') }}" />
 		
 		<!-- Google Analytics -->
@@ -91,7 +91,7 @@
 		<!-- Scripts -->
 			<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 			<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> {{-- jQuery UI --}}
-			<script src="{{ asset('assets/plugins/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script> {{-- Boostrap Select --}}
+			<script src="{{ asset('assets/plugins/bvalidator/jquery.bvalidator.js') }}"></script> {{-- BValidator --}}
 			{{--<script src="{{ asset('assets/js/jquery.dropotron.min.js') }}"></script> --}}
 			<script src="{{ asset('assets/js/jquery.scrollgress.min.js') }}"></script>
 			<script src="{{ asset('assets/js/jquery.scrolly.min.js') }}"></script>

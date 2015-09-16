@@ -10,7 +10,7 @@ $(function() {
 });
 
 // Bootstrap Select
-$('.selectpicker').selectpicker();
+$('.validate').bValidator();
 
 // Scroll To Divisions
 function scrollTo(divID) {

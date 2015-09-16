@@ -49,6 +49,9 @@
 						</div>
 					</div>
 					<div class="12u">
+						<input type="text" name="location" id="location" placeholder="Location">
+					</div>
+					<div class="12u">
 						<ul class="actions">
 							<li><input type="submit" value="Create"></li>
 						</ul>

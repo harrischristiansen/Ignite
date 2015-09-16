@@ -9,8 +9,10 @@ class CreateApplications extends Migration {
 			$table->increments('id');
 			$table->string('name');
 			$table->string('email');
-			$table->integer('interview_id')->unsigned();
-			$table->boolean('emailed'); // Keeps track of if candidate has been notified of current interview time
+			$table->integer('interview_id')->unsigned()->nullable();
+			$table->boolean('emailed');
+			$table->boolean('interviewed');
+			$table->dateTime('applicatedEdited');
 
 			// Application
 			$table->string('facebook');
@@ -22,6 +24,7 @@ class CreateApplications extends Migration {
 			$table->text('languages');
 			$table->text('interests');
 			$table->text('availability');
+			$table->text('meetings');
 
 			// Interview
 			$table->integer('mentor_id')->unsigned()->nullable();

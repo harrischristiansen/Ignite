@@ -8,6 +8,7 @@ class CreateInterviews extends Migration {
 		Schema::create('interviews', function (Blueprint $table) {
 			$table->increments('id');
 			$table->dateTime('interviewDate');
+			$table->string('location');
 			$table->timestamps();
 		});
 	}

@@ -18,12 +18,12 @@ class Application extends Model {
 		return $this->belongsToMany('App\Models\Interest');
 	}
 
-	public function interests() {
-		return $this->belongsToMany('App\Models\Interest');
-	}
-
 	public function languages() {
 		return $this->belongsToMany('App\Models\Language');
+	}
+
+	public function meetings() {
+		return $this->belongsToMany('App\Models\Meeting');
 	}
     
 }

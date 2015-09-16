@@ -8,21 +8,29 @@
 	</header>
 	<div class="container">
 		<section id="content">
+			Applicants: {{ count($applications) }}, Reviewed: {{ $numReviewed }}, Interviewed: {{ $numInterviewed }}, Accepted: {{ $numAccepted }}
+			<span style="float: right;">
+				<a href="{{ action('IgniteController@getApplicationsRanked') }}">View Rankings</a> |
+				<a href="{{ action('IgniteController@getDecisions',0) }}">Start Decisions</a>
+			</span>
+			<hr>
 			<div class="table-wrapper">
 				<table>
 					<thead><tr>
 						<th>Name</th>
-						<th>Interview Time</th>
+						<th>Emailed</th>
+						<th>Interview Rating</th>
+						<th>App Rating</th>
 						<th>Status</th>
-						<th>Mentor</th>
 					</tr></thead>
 					<tbody>
 						@foreach($applications as $application)
 							<tr onclick='window.location.href="{{ action('IgniteController@getApplication',$application->id) }}";' class="hoverPointer">
 								<td>{{ $application->name }}</td>
-								<td>{{ $application->interview->interviewDate->format('D, M j, g:i a') }}</td>
-								<td>{{ $application->status }}</td>
-								<td>{{ isset($application->mentor) ? $application->mentor->name : "" }}</td>
+								<td>{{ $application->emailed==true ? "":"No" }}
+								<td>{{ $application->interviewed==true ? $application->interviewRating:"No" }}
+								<td>{{ $application->appRating!=0.0 ? $application->appRating:"No" }}
+								<td>{{ isset($application->mentor->id) ? $application->mentor->name : $application->status }}</td>
 							</tr>
 						@endforeach
 					</tbody>

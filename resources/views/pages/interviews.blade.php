@@ -13,13 +13,15 @@
 					<thead><tr>
 						<th>Date</th>
 						<th>Time</th>
+						<th>Location</th>
 						<th># Participants</th>
 					</tr></thead>
 					<tbody>
 						@foreach($interviews as $interview)
-							<tr>
+							<tr onclick='window.location.href="{{ action('IgniteController@getInterviewApplications',$interview->id) }}";' class="hoverPointer">
 								<td>{{ $interview->interviewDate->format("D, M j, Y") }}</td>
 								<td>{{ $interview->interviewDate->format("g:i A") }}</td>
+								<td>{{ $interview->location }}</td>
 								<td>{{ count($interview->applications) }}</td>
 							</tr>
 						@endforeach
