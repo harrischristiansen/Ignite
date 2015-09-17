@@ -8,15 +8,15 @@
 		<h2 class="banner_flame">{!! file_get_contents(public_path()."/images/logo/svg/flame.svg") !!}</h2>
 		<h2 class="banner_ignite">{!! file_get_contents(public_path()."/images/logo/svg/ignite.svg") !!}</h2>
 		<p>Our mission is to ignite a generation of talented and ambitious students at Purdue.<br>Join us Fall 2015.</p>
+		{{--
 		<form action="{{ action('IgniteController@getNewApp') }}" method="get" name="applyButton" class="row uniform banner_actions" target="_blank" novalidate>
 			<div class="12u"><input type="submit" value="Apply"></div>
 		</form>
-		{{--
+		--}}
 		<form action="//ignitethefla.us11.list-manage.com/subscribe/post?u=f8b01111e14b6f78ea6929027&amp;id=257e60dfc7" method="post" name="mc-embedded-subscribe-form" class="row uniform banner_actions" target="_blank" novalidate>
 			<div class="8u 12u(small)"><input type="email" name="EMAIL" id="email" value="" placeholder="Email" /></div>
 			<div class="4u 12u(small)"><input type="submit" value="Join Mailing List"></div>
 		</form>
-		--}}
 	</div>
 		<a href="#" class="nextPage" onclick='scrollTo("#why");'>
 			<i class="fa fa-angle-down fa-3x"></i>

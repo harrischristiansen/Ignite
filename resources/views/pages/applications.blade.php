@@ -8,7 +8,7 @@
 	</header>
 	<div class="container">
 		<section id="content">
-			Applicants: {{ count($applications) }}, Reviewed: {{ $numReviewed }}, Interviewed: {{ $numInterviewed }}, Accepted: {{ $numAccepted }}
+			Applicants: {{ count($applications) }}, Reviewed: {{ $numReviewed }}, Interviewed: {{ $numInterviewed }}, <a href="{{ action('IgniteController@getAccepted') }}">Accepted: {{ $numAccepted }}</a>
 			<span style="float: right;">
 				<a href="{{ action('IgniteController@getApplicationsRanked') }}">View Rankings</a> |
 				<a href="{{ action('IgniteController@getDecisions',0) }}">Start Decisions</a>

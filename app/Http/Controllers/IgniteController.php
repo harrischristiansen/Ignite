@@ -108,6 +108,15 @@ class IgniteController extends Controller {
 		return view('pages.applications',compact('applications','numInterviewed','numAccepted','numReviewed'));
 	}
 
+	public function getAccepted(LoggedInRequest $request) {
+		$applications = Application::where('status',"accepted")->orderBy('applicationEdited',"desc")->get();
+		$numInterviewed = count(Application::where('interviewed',true)->get());
+		$numAccepted = count(Application::where('status','Accepted')->get());
+		$numReviewed = count(Application::where('reviewed',true)->get());
+
+		return view('pages.applications',compact('applications','numInterviewed','numAccepted','numReviewed'));
+	}
+
 	public function getApplicationsRanked(LoggedInRequest $request) {
 		$applications = Application::orderByRaw('(appRating*0.2)+(interviewRating*0.8) DESC')->get();
 		$numInterviewed = count(Application::where('interviewed',true)->get());
@@ -158,7 +167,7 @@ class IgniteController extends Controller {
 					});
 					$application->statusEmailed = true;
 					//dd("Sent: ".$application->name);
-				} elseif($application->status == "Denied") {
+				} else {
 					Mail::send('emails.denied', compact('application'), function ($m) use ($application) {
 						$m->to($application->email, $application->name)
 							->from('contact@ignitethefla.me', 'Ignite')
