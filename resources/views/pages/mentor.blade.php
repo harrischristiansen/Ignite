@@ -13,7 +13,7 @@
 		<section id="content">
 			@if($mentor->description != "")
 				<h3>About</h3>
-				<p>{!! $mentor->description !!}</p>
+				<p>{!! nl2br($mentor->description) !!}</p>
 			@endif
 			@if($mentor->orgs != "")
 				<h3>Organizations</h3>

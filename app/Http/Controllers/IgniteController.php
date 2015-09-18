@@ -109,12 +109,26 @@ class IgniteController extends Controller {
 	}
 
 	public function getAccepted(LoggedInRequest $request) {
-		$applications = Application::where('status',"accepted")->orderBy('applicationEdited',"desc")->get();
+		$applications = Application::where('status',"accepted")->orderBy('name')->get();
 		$numInterviewed = count(Application::where('interviewed',true)->get());
 		$numAccepted = count(Application::where('status','Accepted')->get());
 		$numReviewed = count(Application::where('reviewed',true)->get());
 
 		return view('pages.applications',compact('applications','numInterviewed','numAccepted','numReviewed'));
+	}
+
+	public function getAcceptedPrint(LoggedInRequest $request) {
+		$applications = Application::where('status',"accepted")->orderBy('name')->get();
+		$mentors = Mentor::orderBy('name')->get();
+
+		return view('print.accepted',compact('applications','mentors'));
+	}
+
+	public function getMentorsPrint(LoggedInRequest $request) {
+		$applications = Application::where('status',"accepted")->orderBy('name')->get();
+		$mentors = Mentor::orderBy('name')->get();
+
+		return view('print.mentors',compact('applications','mentors'));
 	}
 
 	public function getApplicationsRanked(LoggedInRequest $request) {
@@ -178,6 +192,24 @@ class IgniteController extends Controller {
 				}
 			}
 			$application->save();
+		}
+
+		return $this->getApplications($request);
+	}
+
+	public function getSendAllPairings(LoggedInRequest $request) {
+		$mentors = Mentor::all();
+
+		foreach($mentors as $mentor) {
+			$application = $mentor->applicants()->first();
+			if($application != null) {
+				Mail::send('emails.pairing', compact('application','mentor'), function ($m) use ($mentor,$application) {
+					$m->to($application->email, $application->name)
+						->cc($mentor->email, $mentor->name)
+						->from('contact@ignitethefla.me', 'Ignite')
+						->subject('Ignite Class of Fall 2015 - Your Mentor Is: '.$mentor->name);
+				});
+			}
 		}
 
 		return $this->getApplications($request);
