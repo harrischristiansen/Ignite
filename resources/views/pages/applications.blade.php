@@ -27,9 +27,9 @@
 						@foreach($applications as $application)
 							<tr onclick='window.location.href="{{ action('IgniteController@getApplication',$application->id) }}";' class="hoverPointer">
 								<td>{{ $application->name }}</td>
-								<td>{{ $application->emailed==true ? "":"No" }}
-								<td>{{ $application->interviewed==true ? $application->interviewRating:"No" }}
-								<td>{{ $application->appRating!=0.0 ? $application->appRating:"No" }}
+								<td>{{ $application->emailed==true ? "":"No" }}</td>
+								<td>{{ $application->interviewed==true ? $application->interviewRating:"No" }}</td>
+								<td>{{ $application->appRating!=0.0 ? $application->appRating:"No" }}</td>
 								<td>{{ isset($application->mentor->id) ? $application->mentor->name : $application->status }}</td>
 							</tr>
 						@endforeach

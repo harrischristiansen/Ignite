@@ -108,6 +108,12 @@ class IgniteController extends Controller {
 		return view('pages.applications',compact('applications','numInterviewed','numAccepted','numReviewed'));
 	}
 
+	public function getPairs(LoggedInRequest $request) {
+		$applications = Application::where('status',"accepted")->orderBy('name')->get();
+
+		return view('pages.pairs',compact('applications'));
+	}
+
 	public function getAccepted(LoggedInRequest $request) {
 		$applications = Application::where('status',"accepted")->orderBy('name')->get();
 		$numInterviewed = count(Application::where('interviewed',true)->get());
