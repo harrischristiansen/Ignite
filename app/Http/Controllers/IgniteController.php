@@ -14,6 +14,7 @@ use App\Models\Application;
 use App\Models\Language;
 use App\Models\Interest;
 use App\Models\Meeting;
+use App\Models\Feedback;
 use Carbon\Carbon;
 
 class IgniteController extends Controller {
@@ -123,20 +124,6 @@ class IgniteController extends Controller {
 		return view('pages.applications',compact('applications','numInterviewed','numAccepted','numReviewed'));
 	}
 
-	public function getAcceptedPrint(LoggedInRequest $request) {
-		$applications = Application::where('status',"accepted")->orderBy('name')->get();
-		$mentors = Mentor::orderBy('name')->get();
-
-		return view('print.accepted',compact('applications','mentors'));
-	}
-
-	public function getMentorsPrint(LoggedInRequest $request) {
-		$applications = Application::where('status',"accepted")->orderBy('name')->get();
-		$mentors = Mentor::orderBy('name')->get();
-
-		return view('print.mentors',compact('applications','mentors'));
-	}
-
 	public function getApplicationsRanked(LoggedInRequest $request) {
 		$applications = Application::orderByRaw('(appRating*0.2)+(interviewRating*0.8) DESC')->get();
 		$numInterviewed = count(Application::where('interviewed',true)->get());
@@ -155,72 +142,6 @@ class IgniteController extends Controller {
 		return view('pages.applications',compact('applications','numInterviewed','numAccepted','numReviewed'));
 	}
 
-	public function getSendAllEmails(LoggedInRequest $request) {
-		$applications = Application::all();
-
-		foreach($applications as $application) {
-			if($application->emailed != true) {
-				Mail::send('emails.interviewTime', compact('application'), function ($m) use ($application) {
-					$m->to($application->email, $application->name)
-						->from('contact@ignitethefla.me', 'Ignite')
-						->subject('Ignite Interview: '.(isset($application->interview->id) ? $application->interview->interviewDate->format('D, M j, g:i a'):""));
-				});
-
-				$application->emailed = true;
-				$application->save();
-			}
-		}
-
-		return $this->getApplications($request);
-	}
-
-	public function getSendAllDecisions(LoggedInRequest $request) {
-		$applications = Application::all();
-
-		foreach($applications as $application) {
-			if($application->statusEmailed != true) {
-				if($application->status == "Accepted") {
-					Mail::send('emails.accepted', compact('application'), function ($m) use ($application) {
-						$m->to($application->email, $application->name)
-							->from('contact@ignitethefla.me', 'Ignite')
-							->subject('Welcome to the Ignite Class of Fall 2015');
-					});
-					$application->statusEmailed = true;
-					//dd("Sent: ".$application->name);
-				} else {
-					Mail::send('emails.denied', compact('application'), function ($m) use ($application) {
-						$m->to($application->email, $application->name)
-							->from('contact@ignitethefla.me', 'Ignite')
-							->subject('Ignite Application Decision');
-					});
-					$application->statusEmailed = true;
-					//dd("Sent: ".$application->name);
-				}
-			}
-			$application->save();
-		}
-
-		return $this->getApplications($request);
-	}
-
-	public function getSendAllPairings(LoggedInRequest $request) {
-		$mentors = Mentor::all();
-
-		foreach($mentors as $mentor) {
-			$application = $mentor->applicants()->first();
-			if($application != null) {
-				Mail::send('emails.pairing', compact('application','mentor'), function ($m) use ($mentor,$application) {
-					$m->to($application->email, $application->name)
-						->cc($mentor->email, $mentor->name)
-						->from('contact@ignitethefla.me', 'Ignite')
-						->subject('Ignite Class of Fall 2015 - Your Mentor Is: '.$mentor->name);
-				});
-			}
-		}
-
-		return $this->getApplications($request);
-	}
-
 	public function getApplication(LoggedInRequest $request, $id) {
 		$interviews = Interview::orderBy('interviewDate')->get();
 		$mentors = Mentor::orderBy('name')->get();
@@ -232,21 +153,6 @@ class IgniteController extends Controller {
 		$pageTitle = $application->name;
 
 		return view('pages.application',compact('interviews','mentors','languages','interests','meetings','application','pageTitle'));
-	}
-
-	public function getSendEmail(LoggedInRequest $request, $id) {
-		$application = Application::findOrFail($id);
-
-		Mail::send('emails.interviewTime', compact('application'), function ($m) use ($application) {
-			$m->to($application->email, $application->name)
-				->from('contact@ignitethefla.me', 'Ignite')
-				->subject('Ignite Interview: '.(isset($application->interview->id) ? $application->interview->interviewDate->format('D, M j, g:i a'):""));
-		});
-
-		$application->emailed = true;
-		$application->save();
-
-		return $this->getApplication($request, $id);
 	}
 
 	public function postApplication(LoggedInRequest $request, $id) {
@@ -300,19 +206,7 @@ class IgniteController extends Controller {
 
 	public function getDecisions(LoggedInRequest $request, $id) {
 		$mentors = Mentor::orderBy('name')->get();
-		$applications = Application::orderByRaw('(appRating*0.2)+(interviewRating*0.8) DESC')->get();
-
-		$nextApp = false;
-		$application = null;
-		foreach($applications as $app) {
-			if($id==0 || $nextApp==true) {
-				$application = $app;
-				break;
-			}
-			if($app->id == $id) {
-				$nextApp=true;
-			}
-		}
+		$application = Application::where('status','')->orderByRaw('(appRating*0.2)+(interviewRating*0.8) DESC')->first();
 
 		$pageTitle = $application->name;
 		return view('pages.decisions',compact('mentors','application','pageTitle'));
@@ -326,19 +220,7 @@ class IgniteController extends Controller {
 		$previousApp->save();
 
 		$mentors = Mentor::orderBy('name')->get();
-		$applications = Application::orderByRaw('(appRating*0.2)+(interviewRating*0.8) DESC')->get();
-
-		$nextApp = false;
-		$application = null;
-		foreach($applications as $app) {
-			if($id==0 || $nextApp==true) {
-				$application = $app;
-				break;
-			}
-			if($app->id == $id) {
-				$nextApp=true;
-			}
-		}
+		$application = Application::where('status','')->orderByRaw('(appRating*0.2)+(interviewRating*0.8) DESC')->first();
 
 		$pageTitle = $application->name;
 		return view('pages.decisions',compact('mentors','application','pageTitle'));
@@ -407,6 +289,10 @@ class IgniteController extends Controller {
 			$application->meetings()->sync($request->input('meetings'));
 		}
 
+		if($id=="new") {
+			$this->getSendInterviewTime($request, $application->id);
+		}
+
 		return redirect()->action('IgniteController@getApp', [$application->id, md5($application->name)]);
 	}
 
@@ -432,5 +318,122 @@ class IgniteController extends Controller {
 		$application->facebook = "http://www.facebook.com/";
 
 		return view('pages.application',compact('interviews','mentors','languages','interests','meetings','application'));
+	}
+
+	///////////////////////// Feedback System /////////////////////////
+
+	public function getFeedback() {
+		return view('pages.feedback');
+	}
+
+	public function postFeedback(Request $request) { // TODO: Get Person name, correct /feedback questions, Send Email
+		$feedback = new Feedback;
+		$feedback->name = "TBD";
+		$feedback->feedbackOnMentor = $request->input('mentor');
+		$feedback->feedbackOnProgram = $request->input('program');
+		$feedback->ideasForCurrentSemester = $request->input('currentSemester');
+		$feedback->ideasForNextSemester = $request->input('nextSemester');
+		$feedback->save();
+
+		return view('pages.submitted');
+	}
+	
+	///////////////////////// Emails ///////////////////////////
+	
+	public function getSendInterviewTime(LoggedInRequest $request, $id) {
+		$application = Application::findOrFail($id);
+
+		Mail::send('emails.interviewTime', compact('application'), function ($m) use ($application) {
+			$m->to($application->email, $application->name)
+				->from('contact@ignitethefla.me', 'Ignite')
+				->subject('Ignite Interview: '.(isset($application->interview->id) ? $application->interview->interviewDate->format('D, M j, g:i a'):""));
+		});
+
+		$application->emailed = true;
+		$application->save();
+
+		return $this->getApplication($request, $id);
+	}
+
+	public function getSendAllInterviewTimes(LoggedInRequest $request) {
+		$applications = Application::all();
+
+		foreach($applications as $application) {
+			if($application->emailed != true) {
+				Mail::send('emails.interviewTime', compact('application'), function ($m) use ($application) {
+					$m->to($application->email, $application->name)
+						->from('contact@ignitethefla.me', 'Ignite')
+						->subject('Ignite Interview: '.(isset($application->interview->id) ? $application->interview->interviewDate->format('D, M j, g:i a'):""));
+				});
+
+				$application->emailed = true;
+				$application->save();
+			}
+		}
+
+		return $this->getApplications($request);
+	}
+
+	public function getSendDecisions(LoggedInRequest $request) {
+		$applications = Application::all();
+
+		foreach($applications as $application) {
+			if($application->statusEmailed != true) {
+				if($application->status == "Accepted") {
+					Mail::send('emails.accepted', compact('application'), function ($m) use ($application) {
+						$m->to($application->email, $application->name)
+							->from('contact@ignitethefla.me', 'Ignite')
+							->subject('Welcome to the Ignite Class of Fall 2015');
+					});
+					$application->statusEmailed = true;
+					//dd("Sent: ".$application->name);
+				} else {
+					Mail::send('emails.denied', compact('application'), function ($m) use ($application) {
+						$m->to($application->email, $application->name)
+							->from('contact@ignitethefla.me', 'Ignite')
+							->subject('Ignite Application Decision');
+					});
+					$application->statusEmailed = true;
+					//dd("Sent: ".$application->name);
+				}
+			}
+			$application->save();
+		}
+
+		return $this->getApplications($request);
+	}
+
+	public function getSendPairings(LoggedInRequest $request) {
+		$mentors = Mentor::all();
+
+		foreach($mentors as $mentor) {
+			$application = $mentor->applicants()->first();
+			if($application != null) {
+				Mail::send('emails.pairing', compact('application','mentor'), function ($m) use ($mentor,$application) {
+					$m->to($application->email, $application->name)
+						->cc($mentor->email, $mentor->name)
+						->from('contact@ignitethefla.me', 'Ignite')
+						->subject('Ignite Class of Fall 2015 - Your Mentor Is: '.$mentor->name);
+				});
+			}
+		}
+
+		return $this->getApplications($request);
+	}
+	
+	///////////////////////// Print Pages ///////////////////////////
+	
+	public function getAcceptedPrint(LoggedInRequest $request) {
+		$applications = Application::where('status',"accepted")->orderBy('name')->get();
+		$mentors = Mentor::orderBy('name')->get();
+
+		return view('print.accepted',compact('applications','mentors'));
+	}
+
+	public function getMentorsPrint(Request $request) {
+		$applications = Application::where('status',"accepted")->orderBy('name')->get();
+		$mentors = Mentor::orderBy('name')->get();
+
+		return view('print.mentors',compact('applications','mentors'));
 	}
 }

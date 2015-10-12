@@ -40,34 +40,34 @@
 
 				<nav id="nav">
 					<ul>
-						<li onclick='scrollTo("#why");' class="hoverPointer">Why</li>
-						<li onclick='scrollTo("#mentors");' class="hoverPointer">Mentors</li>
-						<li onclick='scrollTo("#cta");' class="hoverPointer">Contact</li>
-						<li onclick='window.location.href="{{ action('IgniteController@getCalendar') }}";' class="hoverPointer">Calendar</li>
+						<li class="hoverPointer"><a href="#why" onclick='scrollTo("#why");'>Why</a></li>
+						<li class="hoverPointer"><a href="#mentors" onclick='scrollTo("#mentors");'>Mentors</a></li>
+						<li class="hoverPointer"><a href="#cta" onclick='scrollTo("#cta");'>Contact</a></li>
+						<li class="hoverPointer"><a href="{{ action('IgniteController@getCalendar') }}">Calendar</a></li>
 						@if(session('loggedIn') == "true")
-							<li onclick='window.location.href="{{ action('IgniteController@getInterviews') }}";' class="hoverPointer">Interviews</li>
-							<li onclick='window.location.href="{{ action('IgniteController@getApplications') }}";' class="hoverPointer">Applications</li>
-							<li onclick='window.location.href="{{ action('IgniteController@getLogout') }}";' class="hoverPointer">Logout</li>
+							<li class="hoverPointer"><a href="{{ action('IgniteController@getInterviews') }}">Interviews</a></li>
+							<li class="hoverPointer"><a href="{{ action('IgniteController@getApplications') }}">Applications</a></li>
+							<li class="hoverPointer"><a href="{{ action('IgniteController@getLogout') }}">Logout</a></li>
 						@endif
 					</ul>
 				</nav>
 			</header>
 		@else
 			<header id="header">
-				<h1 class="logo_menuBar hoverPointer" onclick='window.location.href="{{ action('IgniteController@getIndex') }}#banner";'>
-					{!! file_get_contents(public_path()."/images/logo/svg/ignite.svg") !!}
+				<h1 class="logo_menuBar hoverPointer"><a href="{{ action('IgniteController@getIndex') }}#banner">
+					{!! file_get_contents(public_path()."/images/logo/svg/ignite.svg") !!}</a>
 				</h1>
 
 				<nav id="nav">
 					<ul>
-						<li onclick='window.location.href="{{ action('IgniteController@getIndex') }}#why";' class="hoverPointer">Why</li>
-						<li onclick='window.location.href="{{ action('IgniteController@getIndex') }}#mentors";' class="hoverPointer">Mentors</li>
-						<li onclick='window.location.href="{{ action('IgniteController@getIndex') }}#cta";' class="hoverPointer">Contact</li>
-						<li onclick='window.location.href="{{ action('IgniteController@getCalendar') }}";' class="hoverPointer">Calendar</li>
+						<li class="hoverPointer"><a href="{{ action('IgniteController@getIndex') }}#why">Why</a></li>
+						<li class="hoverPointer"><a href="{{ action('IgniteController@getIndex') }}#mentors">Mentors</a></li>
+						<li class="hoverPointer"><a href="{{ action('IgniteController@getIndex') }}#cta">Contact</a></li>
+						<li class="hoverPointer"><a href="{{ action('IgniteController@getCalendar') }}">Calendar</a></li>
 						@if(session('loggedIn') == "true")
-							<li onclick='window.location.href="{{ action('IgniteController@getInterviews') }}";' class="hoverPointer">Interviews</li>
-							<li onclick='window.location.href="{{ action('IgniteController@getApplications') }}";' class="hoverPointer">Applications</li>
-							<li onclick='window.location.href="{{ action('IgniteController@getLogout') }}";' class="hoverPointer">Logout</li>
+							<li class="hoverPointer"><a href="{{ action('IgniteController@getInterviews') }}">Interviews</a></li>
+							<li class="hoverPointer"><a href="{{ action('IgniteController@getApplications') }}">Applications</a></li>
+							<li class="hoverPointer"><a href="{{ action('IgniteController@getLogout') }}">Logout</a></li>
 						@endif
 					</ul>
 				</nav>
@@ -92,7 +92,7 @@
 			<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
 			<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> {{-- jQuery UI --}}
 			<script src="{{ asset('assets/plugins/bvalidator/jquery.bvalidator.js') }}"></script> {{-- BValidator --}}
-			{{--<script src="{{ asset('assets/js/jquery.dropotron.min.js') }}"></script> --}}
+			{{--<script src="{{ asset('assets/js/jquery.dropotron.min.js') }}"></script>--}}
 			<script src="{{ asset('assets/js/jquery.scrollgress.min.js') }}"></script>
 			<script src="{{ asset('assets/js/jquery.scrolly.min.js') }}"></script>
 			{{--<script src="{{ asset('assets/js/jquery.slidertron.min.js') }}"></script>--}}

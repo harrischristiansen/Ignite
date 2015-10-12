@@ -8,11 +8,18 @@
 	</header>
 	<div class="container">
 		<section id="content">
-			Applicants: {{ count($applications) }}, Reviewed: {{ $numReviewed }}, Interviewed: {{ $numInterviewed }}, <a href="{{ action('IgniteController@getAccepted') }}">Accepted: {{ $numAccepted }}</a>
+			Applicants: {{ count($applications) }}, Reviewed: {{ $numReviewed }}, Interviewed: {{ $numInterviewed }}, <a href="{{ action('IgniteController@getAccepted') }}">Accepted: {{ $numAccepted }}</a> <a href="{{ action('IgniteController@getPairs') }}">(Pairs)</a>
 			<span style="float: right;">
 				<a href="{{ action('IgniteController@getApplicationsRanked') }}">View Rankings</a> |
 				<a href="{{ action('IgniteController@getDecisions',0) }}">Start Decisions</a>
 			</span>
+			<hr>
+			<h4>Actions</h4>
+			<a href="/send-all-interview-times">Send All Interview Times</a> |
+			<a href="/send-decisions">Send Decisions</a> |
+			<a href="/send-pairings">Send Pairings</a> |
+			<a href="/accepted-print">Accepted Participant Info Print Sheet</a> |
+			<a href="/mentors-print">Mentor Info Print Sheet</a>
 			<hr>
 			<div class="table-wrapper">
 				<table>

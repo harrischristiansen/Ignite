@@ -168,10 +168,10 @@
 							<h5 class="redText">Demonstrates Commitment</h5>
 							<p>{{ $application->committed }}</p>
 	 					</div>
-					<div class="3u$ 6u$(small)">
-						<h5 class="redText">App Rating</h5>
-							<p>{{ $application->appRating }}</p>
- 					</div>
+						<div class="3u$ 6u$(small)">
+							<h5 class="redText">App Rating</h5>
+								<p>{{ $application->appRating }}</p>
+	 					</div>
 						<div class="12u">
 							<h4 class="redText">Notes</h4>
 							<textarea name="notes" id="notes" placeholder="Notes" rows="3">{{ $application->notes }}</textarea>
@@ -185,9 +185,9 @@
 					@if(session('loggedIn') == "true")
 						<div class="2u$ 12u(small)">
 							@if($application->emailed == true)
-								<a href="{{ action('IgniteController@getSendEmail', $application->id) }}"><button type="button" class="button small">Send Time</button></a>
+								<a href="{{ action('IgniteController@getSendInterviewTime', $application->id) }}"><button type="button" class="button small">Send Time</button></a>
 							@else
-								<a href="{{ action('IgniteController@getSendEmail', $application->id) }}"><button type="button" class="button special small ">Send Time</button></a>
+								<a href="{{ action('IgniteController@getSendInterviewTime', $application->id) }}"><button type="button" class="button special small ">Send Time</button></a>
 							@endif
 						</div>
 					@endif

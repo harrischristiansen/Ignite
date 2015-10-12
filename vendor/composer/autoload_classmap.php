@@ -6,8 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'AddApplicationEdits' => $baseDir . '/database/migrations/2015_09_04_210547_add_application_edits.php',
+    'AddApplicationColumns' => $baseDir . '/database/migrations/2015_09_04_210547_add_application_columns.php',
     'CreateApplications' => $baseDir . '/database/migrations/2015_08_31_124902_create_applications.php',
+    'CreateFeedbackTable' => $baseDir . '/database/migrations/2015_10_10_215310_createFeedbackTable.php',
     'CreateInterests' => $baseDir . '/database/migrations/2015_09_01_025902_create_interests.php',
     'CreateInterviews' => $baseDir . '/database/migrations/2015_08_31_002513_create_interviews.php',
     'CreateLanguages' => $baseDir . '/database/migrations/2015_09_01_025847_create_languages.php',
