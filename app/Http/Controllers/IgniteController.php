@@ -322,13 +322,29 @@ class IgniteController extends Controller {
 
 	///////////////////////// Feedback System /////////////////////////
 
-	public function getFeedback() {
-		return view('pages.feedback');
+	public function getFeedback($id,$hash) {
+		$application = Application::find($id);
+		if($application == null || $hash != md5($application->name)) { // Invalid ID/Hash Combo, Try Mentor
+			$application = Mentor::find($id);
+		}
+		if($hash != md5($application->name)) {
+			return $this->getIndex();
+		}
+			
+		return view('pages.feedback',compact('id','hash'));
 	}
 
-	public function postFeedback(Request $request) { // TODO: Get Person name, correct /feedback questions, Send Email
+	public function postFeedback(Request $request,$id,$hash) {
+		$application = Application::find($id);
+		if($application == null || $hash != md5($application->name)) { // Invalid ID/Hash Combo, Try Mentor
+			$application = Mentor::find($id);
+		}
+		if($hash != md5($application->name)) {
+			return $this->getIndex();
+		}
+		
 		$feedback = new Feedback;
-		$feedback->name = "TBD";
+		$feedback->name = $application->name;
 		$feedback->feedbackOnMentor = $request->input('mentor');
 		$feedback->feedbackOnProgram = $request->input('program');
 		$feedback->ideasForCurrentSemester = $request->input('currentSemester');
@@ -414,6 +430,31 @@ class IgniteController extends Controller {
 						->cc($mentor->email, $mentor->name)
 						->from('contact@ignitethefla.me', 'Ignite')
 						->subject('Ignite Class of Fall 2015 - Your Mentor Is: '.$mentor->name);
+				});
+			}
+		}
+
+		return $this->getApplications($request);
+	}
+
+	public function getSendFeedback(LoggedInRequest $request) {
+		$mentors = Mentor::all();
+
+		foreach($mentors as $mentor) {
+			$person = $mentor;
+			Mail::send('emails.update1', compact('person'), function ($m) use ($mentor) {
+				$m->to($mentor->email, $mentor->name)
+					->from('contact@ignitethefla.me', 'Ignite')
+					->subject('Ignite Week 4 Update');
+			});
+			
+			$application = $mentor->applicants()->first();
+			$person = $application;
+			if($application != null) {
+				Mail::send('emails.update1', compact('person'), function ($m) use ($application) {
+					$m->to($application->email, $application->name)
+						->from('contact@ignitethefla.me', 'Ignite')
+						->subject('Ignite Week 4 Update');
 				});
 			}
 		}
