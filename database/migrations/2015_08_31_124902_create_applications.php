@@ -13,6 +13,7 @@ class CreateApplications extends Migration {
 			$table->boolean('emailed');
 			$table->boolean('interviewed');
 			$table->dateTime('applicatedEdited');
+			$table->boolean('updateSent');
 
 			// Application
 			$table->string('facebook');

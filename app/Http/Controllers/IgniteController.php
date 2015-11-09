@@ -423,7 +423,7 @@ class IgniteController extends Controller {
 		$mentors = Mentor::all();
 
 		foreach($mentors as $mentor) {
-			$application = $mentor->applicants()->first();
+			$application = $mentor->applicants()->where('status','Accepted')->first();
 			if($application != null) {
 				Mail::send('emails.pairing', compact('application','mentor'), function ($m) use ($mentor,$application) {
 					$m->to($application->email, $application->name)
@@ -436,26 +436,50 @@ class IgniteController extends Controller {
 
 		return $this->getApplications($request);
 	}
-
-	public function getSendFeedback(LoggedInRequest $request) {
+	
+	public function getResetUpdates(LoggedInRequest $request) {
 		$mentors = Mentor::all();
 
 		foreach($mentors as $mentor) {
 			$person = $mentor;
-			Mail::send('emails.update1', compact('person'), function ($m) use ($mentor) {
-				$m->to($mentor->email, $mentor->name)
-					->from('contact@ignitethefla.me', 'Ignite')
-					->subject('Ignite Week 4 Update');
-			});
+			$mentor->updateSent = false;
+			$mentor->save();
 			
-			$application = $mentor->applicants()->first();
-			$person = $application;
+			$application = $mentor->applicants()->where('status','Accepted')->first();
 			if($application != null) {
-				Mail::send('emails.update1', compact('person'), function ($m) use ($application) {
+				$application->updateSent = false;
+				$application->save();
+			}
+		}
+
+		return $this->getApplications($request);
+	}
+
+	public function getSendUpdates(LoggedInRequest $request) {
+		$mentors = Mentor::all();
+
+		foreach($mentors as $mentor) {
+			$person = $mentor;
+			if($mentor->updateSent == false) {
+				Mail::send('emails.update2', compact('person'), function ($m) use ($mentor) {
+					$m->to($mentor->email, $mentor->name)
+						->from('contact@ignitethefla.me', 'Ignite')
+						->subject('Ignite Nov 8th Update');
+				});
+				$mentor->updateSent = true;
+				$mentor->save();
+			}
+			
+			$application = $mentor->applicants()->where('status','Accepted')->first();
+			$person = $application;
+			if($application != null && $application->updateSent == false) {
+				Mail::send('emails.update2', compact('person'), function ($m) use ($application) {
 					$m->to($application->email, $application->name)
 						->from('contact@ignitethefla.me', 'Ignite')
-						->subject('Ignite Week 4 Update');
+						->subject('Ignite Nov 8th Update');
 				});
+				$application->updateSent = true;
+				$application->save();
 			}
 		}
 

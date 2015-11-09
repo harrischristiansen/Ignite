@@ -19,6 +19,7 @@ class CreateMentors extends Migration {
 			$table->string('github');
 			$table->string('website');
 			$table->string('email');
+			$table->boolean('updateSent');
 			$table->timestamps();
 		});
 	}
